@@ -13,16 +13,16 @@
 
 <style>
     h2 {
-        background-color: #C0262C;
-        background-image: url(multimidia/importante-saber.jpg), 
+        background-color: #C0262C; /* cor de fundo */
+        background-image: url(multimidia/importante-saber.jpg), /* colocar uma imagem de fundo */ 
         url(multimidia/back-bolinha.gif);
-        background-repeat: no-repeat, repeat;
-        background-position: center right, center center;
-        width: 470px;
-        padding: 61px 400px 61px 100px;
-        color: #FFFFFF;
-        font-size: 2.5em;
-        letter-spacing: .1em;
+        background-repeat: no-repeat, repeat; /* background-repeat vai definir se repete ou não a imagem*/
+        background-position: center right, center center; /* vai posicionar a imagem */
+        width: 470px; /* comprimento */
+        padding: 61px 400px 61px 100px; /* espaçamento */
+        color: #FFFFFF; /* cor da letra */
+        font-size: 2.5em; 
+        letter-spacing: .1em; /* espaço entre as letras */
     }
 
     figcaption {
@@ -33,17 +33,17 @@
     }
 
     figure {
-        border: #C0262C solid thin;
-        border-radius: 35px 35px 0 0;
+        border: #C0262C solid thin; /* define a cor da borda */
+        border-radius: 35px 35px 0 0; /* defini o arredontamento dos cantos da borda */
         padding: 20px 0 0;
         text-align: center;
     }
 
     ul li {
-        list-style-type: none;
-        list-style-image: url(multimidia/ossinho.png);
-        list-style-position: inside;
-        margin: 30px 0;
+        list-style-type: none; /* altera o estilo dos marcadores de uma lista */
+        list-style-image: url(multimidia/ossinho.png); /* altera a imagem dos marcadores de uma lista */
+        list-style-position: inside; /* altera a posição dos marcadores de uma lista */
+        margin: 30px 0; /* margin é a margem entre os marcadores */
     }
 
     dt {
@@ -55,29 +55,27 @@
     dd {
         border: thin #C0262C solid;
         border-radius: 0 0 25px 25px;
-        margin-top: -3px;
-        margin-bottom: 30px;
+        margin-top: -3px; /* define a margem superior */
+        margin-bottom: 30px; /* define a margem inferior */
         padding: 20px 20px 0;
     }
 
     ol {
         list-style-type: none;
-        white-space: pre;
+        white-space: pre; /* cria uma espaço em branco */
         line-height: .9em;
         /* definir a variável de contagem */
-        counter-reset: contador;
+        counter-reset: contador; /* definir a variável de contagem */
     }
 
     ol li:before {
         color: #999999;
-        /* incrementar a variável em 1 */
-        counter-increment: contador;
-        /* usar o número do contador como conteúdo */
-        content: "Questão " counter(contador) " \00BB ";
+        counter-increment: contador; /* incrementar a variável em 1 */
+        content: "Questão " counter(contador) " \00BB ";  /* usar o número do contador como conteúdo */
     }
 
     ul li a {
-        text-decoration: none;
+        text-decoration: none; /* text-decoration decora o texto */        
         color: #C0262C;
         font-weight: bold;
         padding: 7px;
@@ -92,7 +90,7 @@
         color: #C0262C;
         font-weight: bold;
         padding: 7px;
-        display: inline-block;
+        display: inline-block; /* display altera a tela de exibição */
     }
 
     dd a[target="_blank"] :hover {

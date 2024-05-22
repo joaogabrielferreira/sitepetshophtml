@@ -1,8 +1,8 @@
 h1 {
     color: #C0262C;
-    font-size: 2.5em; /* 40/16=2.5 */
-    border-bottom: #C0262C solid thin;
-    padding-bottom: 7px;
+    font-size: 2.5em; /* 40/16=2.5 */ /* tamanho da fonte */
+    border-bottom: #C0262C solid thin; /* cria uma borda com uma linha descendo apenas para baixo */
+    padding-bottom: 7px; /* cria uma espaçamento descendo apenas para baixo */
 }
 
 h2 {
@@ -11,21 +11,21 @@ h2 {
 
 p {
     font-size: 1.1em;
-    line-height: 1.3em;
-    text-align: justify;
+    line-height: 1.3em; /* altura da linha */
+    text-align: justify; /* alinhar texto */
 }
 
 p::first-line {
     font-size: 1.17em;
-    font-variant: small-caps;
-    font-weight: bolder;
-    font-style: italic;
+    font-variant: small-caps; /* o font-variant vai definir se a fonte vai ser maiúscula ou minúscula */
+    font-weight: bolder; /* font-weight traduzindo ao pé da letra, seria o peso da fonte */
+    font-style: italic; /* font-style muda o estilo da fonte */
 }
 
 hr {
-    border-color: #C0262C;
+    border-color: #C0262C; /* border-color muda a cor da borda */
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* altera a fonte de acordo com a primeira fonte escolhida */
 }
