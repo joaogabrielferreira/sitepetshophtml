@@ -1,0 +1,108 @@
+h1 {
+    color: #C0262C;
+	font-size: 2.5em; /* 40/16=2.5 */
+border-bottom: #C0262C solid thin;
+padding-bottom: 7px;
+
+}
+
+h2 {
+    font-size: 1.75em; /* 28/16=1.75 */
+    background: #C0262C url(../multimidia/back-bolinha.gif) repeat top center; /* Altera a cor de fundo */
+    color: #fff; /* Altera a cor da letra */
+    letter-spacing: .1em; /* Altera o espaço entre as letras */
+    padding: 7px; /* Altera o espaçamento */
+    width: 316px; /* Altera a largura */
+}
+
+p { 	
+font-size: 1.1em; 	
+line-height: 1.3em; 	
+text-align: justify; 
+}
+
+p:first-line {
+font-size: 1.17em;
+font-variant: small-caps;
+font-weight: bolder;
+font-style: italic;
+}
+
+hr {
+border-color: #C0262C;
+}
+
+body { 	
+font-family: Helvetica, Arial, sans-serif; 
+}
+
+/* página produtos - tabela */
+#produtos table { 
+    width: 600px; /* Modifica a largura */
+    margin: 50px auto 30px; /* Modifica a margem */
+    text-align: center; /* Alinha o texto no centro */
+    border-collapse: collapse; /* Altera o as linhas da borda */
+}
+
+#produtos th, #produtos td {
+    border: #999 solid 1px; /* Altera a cor da borda */
+    padding: 5px; /* Altera o espaçamento */
+}
+
+table {
+    border-collapse: collapse; /* Altera o as linhas da borda  */
+}
+
+tr {
+    border-top: solid 3px #777; /* Altera a cor da borda de cima */
+    border-bottom: solid 3px #777; /* Altera a cor da borda de baixo*/
+}
+
+th, td {
+    padding: 7px; /* Altera o espaçamento */
+}
+
+#produtos caption {
+    background-color: #999; /* Altera a cor de fundo */
+    color: #fff; /* Altera a cor da letra */
+    padding: 15px 0; /* Altera o espaçamento */
+    font-size: 1.5em; /* Altera o tamanho da fonte */
+}
+
+caption {
+    caption-side: bottom; /* Altera a posição do caption, colocando ele para baixo */
+    background-color: #777; /* Altera a cor de fundo */
+    color: #fff; /* Altera a cor da letra */
+    padding: 10px 0; /* Altera o espaçamento */
+}
+
+#produtos td[coldspan] {
+    font-style: italic; /* Altera o estilo da fonte */
+    font-weight: bold; /* Altera o peso da fonte */
+    color: #999; /* Altera a cor da letra */
+}
+
+#produtos tr:hover {
+    background-color: #FEFF76; /* O hover foi utilizado para que, quando o mouse passa por cima da tabela a cor de fundo é alterada */
+}
+
+/* página boletim - formulário */
+form {
+    background-color: #999;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 0 15px;
+}
+
+input[type="submit"] {
+    background-color: #C0262C; /* Altera a cor de fundo */
+    background: linear-gradient(to bottom, #6b1516 0%, #C0262C 30%, #C0262C 70%, #6b1516 100%); /**/
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px #000;
+    cursor: pointer;
+}
