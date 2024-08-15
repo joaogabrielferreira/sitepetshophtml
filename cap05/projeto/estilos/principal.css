@@ -87,6 +87,13 @@ form {
     border-radius: 0 15px; /* Arredonda as bordas */
 }
 
+label {
+    display: block;
+    margin-top: 7px;
+    float: left;
+    width: 60px;
+}
+
 input#nome, input#email {
     background-color: transparent; /* Altera a cor de fundo */
     border: none; /* Deixa sem bordas ou retira as bordas*/
@@ -96,7 +103,23 @@ input#nome, input#email {
     width: 800px; /* Altera a largura */
 }
 
-::-webkit-input-placeholder { }
+::-webkit-input-placeholder { /* Chrome/Safari/Opera */
+    color: #ddd; /* Altera a cor da letra */
+    font-style: italic; /* Altera o estilo da fonte */
+    font-size: .8em; /* Altera o tamanho da fonte */
+ }
+
+::-moz-placeholder { /* Firefox */ 
+    color: #ddd; /* Altera a cor da letra */
+    font-style: italic; /* Altera o estilo da fonte */
+    font-size: .8em; /* Altera o tamanho da fonte */
+}
+
+:-ms-input-placeholder { /* IE */
+    color: #ddd; /* Altera a cor da letra */
+    font-style: italic; /* Altera o estilo da fonte */
+    font-size: .8em; /* Altera o tamanho da fonte */
+}
 
 input[type="submit"] {
     background-color: #C0262C; /* Altera a cor de fundo */
@@ -109,4 +132,13 @@ input[type="submit"] {
     margin: 20px 0; /* Altera a margem */
     text-shadow: 2px 2px 5px #000; /* Aplica uma sombra */
     cursor: pointer; /* Altera o ponteiro do mouse */
+}
+
+/* página banho e tosa - formulário */
+
+#banhoEtosa fieldset {
+    background-color: #fff; /* Altera a cor de fundo */
+    border: none; /* Retira as bordas */
+    border-radius: 0 15px; /* Arredonda as bordas */
+    margin-bottom: 20px; /* Altera a margem da parte de baixo */
 }
