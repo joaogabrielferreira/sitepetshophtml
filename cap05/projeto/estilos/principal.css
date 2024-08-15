@@ -69,13 +69,6 @@ th, td {
     font-size: 1.5em; /* Altera o tamanho da fonte */
 }
 
-caption {
-    caption-side: bottom; /* Altera a posição do caption, colocando ele para baixo */
-    background-color: #777; /* Altera a cor de fundo */
-    color: #fff; /* Altera a cor da letra */
-    padding: 10px 0; /* Altera o espaçamento */
-}
-
 #produtos td[coldspan] {
     font-style: italic; /* Altera o estilo da fonte */
     font-weight: bold; /* Altera o peso da fonte */
@@ -88,21 +81,32 @@ caption {
 
 /* página boletim - formulário */
 form {
-    background-color: #999;
-    margin: 30px 0;
-    padding: 20px;
-    border-radius: 0 15px;
+    background-color: #999; /* Altera a cor de fundo */
+    margin: 30px 0; /* Altera a margem */
+    padding: 20px; /* Altera o espaçamento */
+    border-radius: 0 15px; /* Arredonda as bordas */
 }
+
+input#nome, input#email {
+    background-color: transparent; /* Altera a cor de fundo */
+    border: none; /* Deixa sem bordas ou retira as bordas*/
+    border-bottom: #000 solid 1px; /* Cria uma borda em baixo */
+    font-size: 1.2em; /* Altera o tamanho da fonte */
+    color: #fff; /* Altera a cor da letra */
+    width: 800px; /* Altera a largura */
+}
+
+::-webkit-input-placeholder { }
 
 input[type="submit"] {
     background-color: #C0262C; /* Altera a cor de fundo */
-    background: linear-gradient(to bottom, #6b1516 0%, #C0262C 30%, #C0262C 70%, #6b1516 100%); /**/
-    border: none;
-    border-radius: 30px;
-    font-size: 1.2em;
-    color: #fff;
-    padding: 10px 30px;
-    margin: 20px 0;
-    text-shadow: 2px 2px 5px #000;
-    cursor: pointer;
+    background: linear-gradient(to bottom, #6b1516 0%, #C0262C 30%, #C0262C 70%, #6b1516 100%); /* Altera a cor de fundo */
+    border: none; /* Retira as bordas */
+    border-radius: 30px; /* Arredonda as bordas */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    color: #fff; /* Altera a cor da letra */
+    padding: 10px 30px; /* Altera o espaçamento */
+    margin: 20px 0; /* Altera a margem */
+    text-shadow: 2px 2px 5px #000; /* Aplica uma sombra */
+    cursor: pointer; /* Altera o ponteiro do mouse */
 }
